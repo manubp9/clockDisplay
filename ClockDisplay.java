@@ -42,14 +42,31 @@
        minutos = (minutos+1);
        if ( minutos==60){
             horas=(horas+1);
-            minutos=(minutos+2);
+            minutos=(0);
         }
        if (horas == 24){
         horas=00;
        }
+       
+    }  
+    /**
+     * Devolcer la hora en 5 caracteres divididos por ":"
+     */
+    public String getTime()
+    {
+        if (horas < 10 & minutos < 10){
+            return "0" + horas + ":" + "0" + minutos;
+        }
+        else if( horas < 10 ){
+            return "0"+ horas + ":" + minutos;
+        }
+        else if( minutos < 10 ) {
+            return horas + ":" + "0" + minutos;
+        }
+        else {
+        return horas + ":" + minutos;
+        }
     }
-   }  
-   
-   
+}
     
    
