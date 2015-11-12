@@ -26,5 +26,13 @@
         horas = 0;
         minutos = 0;
     } 
+    /**
+     * fijar la hora
+     */
+    public void setTime(int hora, int minuto)
+    {
+        horas = hora;
+        minutos = minuto;
+    }
 }    
    
