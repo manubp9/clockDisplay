@@ -34,5 +34,22 @@
         horas = hora;
         minutos = minuto;
     }
-}    
+    /**
+     * aumentar un minuto cada vez que se invoca
+     */
+    public void TimeTick()
+    {
+       minutos = (minutos+1);
+       if ( minutos==60){
+            horas=(horas+1);
+            minutos=(minutos+2);
+        }
+       if (horas == 24){
+        horas=00;
+       }
+    }
+   }  
+   
+   
+    
    
